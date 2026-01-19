@@ -1,19 +1,23 @@
-import Navigation from "@/components/navigation"
-import Hero from "@/components/hero"
-import Products from "@/components/products"
-import About from "@/components/about"
-import Contact from "@/components/contact"
-import Footer from "@/components/footer"
+import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
+import { About } from "@/components/about";
+import { Products } from "@/components/products";
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
-      <Navigation />
-      <Hero />
-      <Products />
-      <About />
-      <Contact />
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Products />
+        <Contact />
+      </main>
       <Footer />
-    </main>
-  )
+      <WhatsAppButton />
+    </>
+  );
 }
